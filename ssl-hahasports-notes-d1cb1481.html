@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资料整理手记 · 哈哈体育索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background: #f2f4f6;
+      color: #1e2b3c;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+    .page-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    /* header / hero */
+    .hero {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #dce1e6;
+    }
+    .hero h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0f1a2b;
+      margin-bottom: 0.4rem;
+    }
+    .hero .sub {
+      font-size: 0.95rem;
+      color: #5f6b7a;
+      border-left: 3px solid #94a3b8;
+      padding-left: 1rem;
+      margin-top: 0.3rem;
+    }
+    /* card-like sections */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem 1.8rem;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.04);
+      border: 1px solid #e6eaef;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+      color: #1a2b3e;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card h2::before {
+      content: "▍";
+      color: #6a7f9b;
+      font-weight: 400;
+    }
+    .card p {
+      margin-bottom: 0.9rem;
+      font-size: 0.95rem;
+      color: #2c3a4b;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+    .inline-link {
+      color: #1f5b8a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b6c9de;
+      transition: border-color 0.15s, background 0.15s;
+      padding: 0 0.1rem;
+    }
+    .inline-link:hover {
+      border-bottom-color: #1f5b8a;
+      background: #ecf2f9;
+    }
+    /* 引用提示块 */
+    .tip-block {
+      background: #eef2f7;
+      border-left: 4px solid #8a9eb4;
+      padding: 1rem 1.4rem;
+      margin: 1.2rem 0 0.6rem 0;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.9rem;
+      color: #1d2c3d;
+    }
+    .tip-block strong {
+      font-weight: 600;
+      color: #0f2a41;
+    }
+    /* 分隔装饰 */
+    .divider-text {
+      text-align: center;
+      color: #8d9baa;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      margin: 1.8rem 0 1rem;
+      position: relative;
+    }
+    .divider-text span {
+      background: #f2f4f6;
+      padding: 0 0.8rem;
+    }
+    .divider-text::before {
+      content: "";
+      display: block;
+      height: 1px;
+      background: #dbe0e6;
+      position: relative;
+      top: 0.6rem;
+      z-index: 0;
+    }
+    /* 访问句 — 融入段落 */
+    .access-sentence {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.2rem 0 1.8rem;
+      border: 1px solid #e1e7ed;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .access-sentence a {
+      font-weight: 500;
+    }
+    /* faq 摘要 */
+    .faq-item {
+      margin-bottom: 0.9rem;
+    }
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+    .faq-q {
+      font-weight: 550;
+      color: #1f3349;
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    .faq-a {
+      color: #3f5063;
+      font-size: 0.9rem;
+      padding-left: 0.2rem;
+    }
+    /* 响应式 */
+    @media (max-width: 500px) {
+      body {
+        padding: 1.2rem 0.9rem;
+      }
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- hero 标题 + 导语 -->
+  <div class="hero">
+    <h1>资料整理·索引手记</h1>
+    <div class="sub">从信息碎片到有序存档 · 一份围绕体育内容聚合的轻整理</div>
+  </div>
+
+  <!-- 卡片：切入角度说明 -->
+  <div class="card">
+    <h2>为什么做这个索引</h2>
+    <p>日常浏览时，体育类的资讯、赛程、话题经常散落在不同平台。我习惯把相对集中、更新稳定的站点单独记录下来，方便后续查阅。<a href="https://ssl-hahasports.com" class="inline-link">哈哈体育</a> 是其中比较有代表性的一个信息聚合方向——它围绕体育内容做了持续的整理，栏目分类也相对清晰。下面是我整理时留意到的几个特点，以及一些使用上的小提示。</p>
+  </div>
+
+  <!-- 卡片：从资料整理角度观察到的特点 -->
+  <div class="card">
+    <h2>从整理者视角看特点</h2>
+    <p>第一，内容覆盖的广度还不错。从主流联赛到小众项目，基本都能找到对应的板块，省去四处搜罗的时间。第二，页面的分类逻辑偏实用，比如按赛事类型、按队伍、按资讯热度区分，查找时不太容易迷路。第三，更新节奏比较稳定，对于习惯每天扫一眼体育动态的人来说，能形成一个固定的阅读节点。</p>
+    <div class="tip-block">
+      <strong>📌 个人提示：</strong> 如果是为了快速比对赛程或数据，建议先熟悉一下站内的导航分组，初次使用花几分钟浏览结构，后续效率会高很多。
+    </div>
+  </div>
+
+  <!-- 卡片：适用场景与习惯 -->
+  <div class="card">
+    <h2>我常用到的几个场景</h2>
+    <p>· 早晨快速浏览前一日赛果，顺便扫一眼当日焦点战预告。<br>
+       · 周末想挑一场比赛看回放或集锦，直接按联赛分类去找，比搜索引擎更直接。<br>
+       · 写运动笔记或整理自己的观赛记录时，拿它当数据核对参考——当然，关键数据我会交叉确认。</p>
+    <p style="margin-top: 0.5rem; color: #3e556a;">整体上，它像一个体育资料的“桌面文件夹”，分类清晰，打开就能用。</p>
+  </div>
+
+  <!-- 访问句（自然融入句子） -->
+  <div class="access-sentence">
+    <p>如果你也在寻找一个可以日常查阅体育内容的地方，不妨把 <a href="https://ssl-hahasports.com" class="inline-link" style="border-bottom-width: 2px;">哈哈体育</a> 放进你的书签栏。它不花哨，但胜在内容扎实、查找直接，适合作为信息索引的起点之一。</p>
+  </div>
+
+  <!-- FAQ 摘要（轻量问答） -->
+  <div class="card">
+    <h2>FAQ 摘要 · 整理时的小问题</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q1：这个网站需要注册才能看内容吗？</div>
+      <div class="faq-a">大部分内容可以直接浏览，不需要注册或登录，对单纯想查资料的人来说比较友好。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q2：移动端浏览体验怎么样？</div>
+      <div class="faq-a">页面做了基本的响应式适配，手机浏览器打开排版没有明显错乱，卡片和文字都清晰可读。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q3：资料整理时有没有发现明显的误导信息？</div>
+      <div class="faq-a">目前没有发现刻意误导的内容，但体育数据更新快，建议以官方赛事公告为最终依据，这里更适合做参考索引。</div>
+    </div>
+  </div>
+
+  <!-- 结尾句 / 收束 -->
+  <div style="margin: 1.8rem 0 1rem; text-align: right; font-size: 0.8rem; color: #7b8a9c; border-top: 1px solid #d6dde5; padding-top: 1.2rem;">
+    整理手记 · 不定期更新  /  基于个人使用体验，非官方说明
+  </div>
+
+</div>
+</body>
+</html>
